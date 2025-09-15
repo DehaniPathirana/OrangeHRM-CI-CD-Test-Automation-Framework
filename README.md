@@ -23,7 +23,7 @@ This automation framework provides a robust testing solution for OrangeHRM appli
 
 ## Quality Assurance
 
-* 95% test stability rate with comprehensive error handling
+* Very Good test stability rate with comprehensive error handling
 * Thread-safe reporting to prevent race conditions
 * Automatic screenshot capture on test failures
 * Detailed logging with Log4j2 integration
