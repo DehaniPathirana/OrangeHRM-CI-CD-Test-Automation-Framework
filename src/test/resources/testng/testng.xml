@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OrangeHRM_Automation_Suite" parallel="methods" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.orangehrm.listeners.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Chrome Browser Tests -->
+    <test name="Chrome_Tests" preserve-order="true">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="com.orangehrm.tests.LoginTest"/>
+            <class name="com.orangehrm.tests.EmployeeManagementTest"/>
+        </classes>
+    </test>
+
+    <!-- Firefox Browser Tests -->
+    <test name="Firefox_Tests" preserve-order="true">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.orangehrm.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Edge Tests - Commented out due to driver download issues
+    <test name="Edge_Tests" preserve-order="true">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="com.orangehrm.tests.LoginTest"/>
+        </classes>
+    </test>
+    -->
+
+</suite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cross_Browser_Testing" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.orangehrm.listeners.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Smoke Tests across all browsers -->
+    <test name="Chrome_Smoke_Tests">
+        <parameter name="browser" value="CHROME"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.orangehrm.tests"/>
+        </packages>
+    </test>
+
+    <test name="Firefox_Smoke_Tests">
+        <parameter name="browser" value="FIREFOX"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.orangehrm.tests"/>
+        </packages>
+    </test>
+
+    <test name="Edge_Smoke_Tests">
+        <parameter name="browser" value="EDGE"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.orangehrm.tests"/>
+        </packages>
+    </test>
+
+</suite>

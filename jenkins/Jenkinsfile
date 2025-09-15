@@ -1,0 +1,209 @@
+// jenkins/Jenkinsfile
+pipeline {
+	agent any
+
+    parameters {
+		choice(
+            name: 'BROWSER',
+            choices: ['CHROME', 'FIREFOX', 'EDGE', 'ALL'],
+            description: 'Select browser for test execution'
+        )
+        choice(
+            name: 'TEST_SUITE',
+            choices: ['smoke', 'regression', 'cross-browser'],
+            description: 'Select test suite to execute'
+        )
+        booleanParam(
+            name: 'PARALLEL_EXECUTION',
+            defaultValue: true,
+            description: 'Enable parallel test execution'
+        )
+    }
+
+    environment {
+		MAVEN_OPTS = '-Xmx1024m -XX:MaxPermSize=256m'
+        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk'
+    }
+
+    stages {
+		stage('Checkout') {
+			steps {
+				script {
+					echo "Checking out source code..."
+                    checkout scm
+                }
+            }
+        }
+
+        stage('Setup') {
+			steps {
+				script {
+					echo "Setting up test environment..."
+                    // Clean previous reports
+                    sh 'rm -rf reports/* screenshots/* allure-results/*'
+
+                    // Create necessary directories
+                    sh 'mkdir -p reports/extent-reports screenshots allure-results'
+                }
+            }
+        }
+
+        stage('Start Selenium Grid') {
+			when {
+				expression { params.BROWSER == 'ALL' || params.TEST_SUITE == 'cross-browser' }
+            }
+            steps {
+				script {
+					echo "Starting Selenium Grid..."
+                    sh 'cd docker && docker-compose up -d'
+
+                    // Wait for grid to be ready
+                    sh 'sleep 30'
+
+                    // Verify grid status
+                    sh 'curl -sSL http://localhost:4444/wd/hub/status'
+                }
+            }
+        }
+
+        stage('Run Tests') {
+			parallel {
+				stage('Chrome Tests') {
+					when {
+						expression { params.BROWSER == 'CHROME' || params.BROWSER == 'ALL' }
+                    }
+                    steps {
+						script {
+							echo "Running Chrome tests..."
+                            runTests('CHROME')
+                        }
+                    }
+                }
+
+                stage('Firefox Tests') {
+					when {
+						expression { params.BROWSER == 'FIREFOX' || params.BROWSER == 'ALL' }
+                    }
+                    steps {
+						script {
+							echo "Running Firefox tests..."
+                            runTests('FIREFOX')
+                        }
+                    }
+                }
+
+                stage('Edge Tests') {
+					when {
+						expression { params.BROWSER == 'EDGE' || params.BROWSER == 'ALL' }
+                    }
+                    steps {
+						script {
+							echo "Running Edge tests..."
+                            runTests('EDGE')
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Generate Reports') {
+			steps {
+				script {
+					echo "Generating test reports..."
+
+                    // Generate Allure report
+                    allure([
+                        includeProperties: false,
+                        jdk: '',
+                        properties: [],
+                        reportBuildPolicy: 'ALWAYS',
+                        results: [[path: 'allure-results']]
+                    ])
+
+                    // Publish TestNG results
+                    publishTestResults testResultsPattern: 'target/surefire-reports/testng-results.xml'
+
+                    // Archive artifacts
+                    archiveArtifacts artifacts: 'reports/**/*,screenshots/**/*', fingerprint: true
+                }
+            }
+        }
+    }
+
+    post {
+		always {
+			script {
+				echo "Cleaning up..."
+                // Stop Selenium Grid
+                sh 'cd docker && docker-compose down || true'
+
+                // Clean workspace
+                cleanWs()
+            }
+        }
+
+        success {
+			script {
+				echo "Pipeline completed successfully!"
+                // Send success notification
+                sendNotification('SUCCESS')
+            }
+        }
+
+        failure {
+			script {
+				echo "Pipeline failed!"
+                // Send failure notification
+                sendNotification('FAILURE')
+            }
+        }
+    }
+}
+
+// Helper function to run tests
+def runTests(browser) {
+	def suiteFile = getSuiteFile()
+
+    sh """
+        mvn clean test \\
+        -Dbrowser=${browser} \\
+        -Dsurefire.suiteXmlFiles=${suiteFile} \\
+        -Dparallel.execution=${params.PARALLEL_EXECUTION}
+    """
+}
+
+// Helper function to get suite file based on parameter
+def getSuiteFile() {
+	switch(params.TEST_SUITE) {
+	case 'smoke':
+            return 'src/test/resources/testng/smoke-testng.xml'
+        case 'regression':
+            return 'src/test/resources/testng/regression-testng.xml'
+        case 'cross-browser':
+            return 'src/test/resources/testng/cross-browser-testng.xml'
+        default:
+            return 'src/test/resources/testng/testng.xml'
+    }
+}
+
+// Helper function to send notifications
+def sendNotification(status) {
+	// Email notification configuration
+    def subject = "${status}: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}"
+    def body = """
+        <h3>Build ${status}</h3>
+        <p><strong>Job:</strong> ${env.JOB_NAME}</p>
+        <p><strong>Build Number:</strong> ${env.BUILD_NUMBER}</p>
+        <p><strong>Browser:</strong> ${params.BROWSER}</p>
+        <p><strong>Test Suite:</strong> ${params.TEST_SUITE}</p>
+        <p><strong>Build URL:</strong> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
+        <p><strong>Test Reports:</strong> <a href="${env.BUILD_URL}allure">Allure Report</a></p>
+    """
+
+    emailext (
+        subject: subject,
+        body: body,
+        mimeType: 'text/html',
+        to: 'team@company.com'
+    )
+}
