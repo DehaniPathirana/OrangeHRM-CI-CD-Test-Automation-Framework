@@ -1,0 +1,16 @@
+2025-09-15 20:31:13.529 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.tests.EmployeeManagementTest - Starting add new employee test
+2025-09-15 20:31:15.826 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.tests.LoginTest - Starting valid login test
+2025-09-15 20:31:19.211 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.tests.LoginTest - Valid login test completed successfully
+2025-09-15 20:31:23.422 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.tests.LoginTest - Starting invalid login test
+2025-09-15 20:31:26.354 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.tests.LoginTest - Invalid login test completed successfully
+2025-09-15 20:31:32.487 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.tests.LoginTest - Starting empty credentials test
+2025-09-15 20:31:34.850 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.tests.LoginTest - Empty credentials test completed successfully
+2025-09-15 20:31:42.720 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.tests.EmployeeManagementTest - Add new employee test completed successfully
+2025-09-15 20:31:46.685 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.tests.EmployeeManagementTest - Starting search employee test
+2025-09-15 20:32:02.428 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.tests.EmployeeManagementTest - Search employee test completed successfully
+2025-09-15 20:32:15.392 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.tests.LoginTest - Starting invalid login test
+2025-09-15 20:32:20.152 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.tests.LoginTest - Starting valid login test
+2025-09-15 20:32:36.102 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.tests.LoginTest - Valid login test completed successfully
+2025-09-15 20:32:36.800 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.tests.LoginTest - Invalid login test completed successfully
+2025-09-15 20:32:45.149 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.tests.LoginTest - Starting empty credentials test
+2025-09-15 20:32:46.242 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.tests.LoginTest - Empty credentials test completed successfully

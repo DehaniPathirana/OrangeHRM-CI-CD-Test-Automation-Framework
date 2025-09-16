@@ -1,126 +1,126 @@
-2025-09-15 20:31:06.417 [main] INFO  com.orangehrm.listeners.ExtentManager - ExtentReports initialized successfully. Report path: C:\Users\User\Desktop\SeleniumProjects\orangehrm-ci-cd-framework/reports/extent-reports/ExtentReport_2025-09-15_20-31-06.html
-2025-09-15 20:31:06.635 [main] INFO  com.orangehrm.listeners.TestListener - Starting test suite: OrangeHRM_Automation_Suite
-2025-09-15 20:31:06.665 [main] INFO  com.orangehrm.base.BaseTest - Starting test suite execution
-2025-09-15 20:31:06.732 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
-2025-09-15 20:31:06.732 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
-2025-09-15 20:31:09.876 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
-2025-09-15 20:31:09.878 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
-2025-09-15 20:31:13.423 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:31:13.487 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testAddNewEmployee
-2025-09-15 20:31:13.549 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
-2025-09-15 20:31:14.267 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> name: username]
-2025-09-15 20:31:14.515 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> name: password]
-2025-09-15 20:31:15.818 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:31:15.823 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testValidLogin
-2025-09-15 20:31:17.110 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
-2025-09-15 20:31:17.272 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[ChromeDriver: chrome on windows (49c4e3041ea499744b1b7720d45f8312)] -> name: username]
-2025-09-15 20:31:17.428 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[ChromeDriver: chrome on windows (49c4e3041ea499744b1b7720d45f8312)] -> name: password]
-2025-09-15 20:31:17.599 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (49c4e3041ea499744b1b7720d45f8312)] -> xpath: //button[@type='submit']]
-2025-09-15 20:31:17.600 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
-2025-09-15 20:31:19.223 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testValidLogin
-2025-09-15 20:31:19.228 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:31:19.392 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:31:19.396 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:31:19.397 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
-2025-09-15 20:31:20.169 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
-2025-09-15 20:31:23.413 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:31:23.416 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testInvalidLogin
-2025-09-15 20:31:24.080 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: InvalidUser
-2025-09-15 20:31:24.226 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidUser' into element: [[ChromeDriver: chrome on windows (b02b9d2d707807579943788a9ebc2626)] -> name: username]
-2025-09-15 20:31:24.410 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidPassword' into element: [[ChromeDriver: chrome on windows (b02b9d2d707807579943788a9ebc2626)] -> name: password]
-2025-09-15 20:31:25.909 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type='submit']'
-2025-09-15 20:31:25.909 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
-2025-09-15 20:31:26.021 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM module
-2025-09-15 20:31:26.280 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (b02b9d2d707807579943788a9ebc2626)] -> xpath: //button[@type='submit']]
-2025-09-15 20:31:26.280 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: InvalidUser
-2025-09-15 20:31:26.358 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testInvalidLogin
-2025-09-15 20:31:26.359 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:31:26.508 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:31:26.509 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:31:26.512 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
-2025-09-15 20:31:27.209 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
-2025-09-15 20:31:28.226 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> xpath: //span[text()='PIM']]
-2025-09-15 20:31:28.292 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Adding new employee: John Doe, ID: EMP1757948488292
-2025-09-15 20:31:32.476 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:31:32.482 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testEmptyCredentials
-2025-09-15 20:31:34.361 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: 
-2025-09-15 20:31:34.493 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[ChromeDriver: chrome on windows (463145cee169ad5185b5bff281ac7803)] -> name: username]
-2025-09-15 20:31:34.617 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[ChromeDriver: chrome on windows (463145cee169ad5185b5bff281ac7803)] -> name: password]
-2025-09-15 20:31:34.758 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (463145cee169ad5185b5bff281ac7803)] -> xpath: //button[@type='submit']]
-2025-09-15 20:31:34.758 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: 
-2025-09-15 20:31:34.852 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testEmptyCredentials
-2025-09-15 20:31:34.853 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:31:35.001 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:31:35.001 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:31:38.838 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()=' Add ']'
-2025-09-15 20:31:38.971 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'John' into element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> name: firstName]
-2025-09-15 20:31:39.255 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'Doe' into element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> name: lastName]
-2025-09-15 20:31:40.551 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'EMP1757948488292' into element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> xpath: //label[text()='Employee Id']/following::input[1]]
-2025-09-15 20:31:40.716 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (fb4b393bb8c5b6cd0017222ce6b5dba8)] -> xpath: //button[@type='submit']]
-2025-09-15 20:31:40.717 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Employee addition form submitted
-2025-09-15 20:31:42.720 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testAddNewEmployee
-2025-09-15 20:31:42.720 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:31:42.932 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:31:42.932 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:31:42.940 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
-2025-09-15 20:31:43.615 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
-2025-09-15 20:31:46.679 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:31:46.681 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testSearchEmployee
-2025-09-15 20:31:46.685 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
-2025-09-15 20:31:47.238 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[ChromeDriver: chrome on windows (b392feae2ac437cd1672654d0382d06c)] -> name: username]
-2025-09-15 20:31:47.389 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[ChromeDriver: chrome on windows (b392feae2ac437cd1672654d0382d06c)] -> name: password]
-2025-09-15 20:31:58.698 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type='submit']'
-2025-09-15 20:31:58.698 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
-2025-09-15 20:31:58.698 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM module
-2025-09-15 20:32:00.859 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (b392feae2ac437cd1672654d0382d06c)] -> xpath: //span[text()='PIM']]
-2025-09-15 20:32:00.860 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Searching for employee: John
-2025-09-15 20:32:01.011 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'John' into element: [[ChromeDriver: chrome on windows (b392feae2ac437cd1672654d0382d06c)] -> xpath: //input[@placeholder='Type for hints...']]
-2025-09-15 20:32:01.137 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (b392feae2ac437cd1672654d0382d06c)] -> xpath: //button[@type='submit']]
-2025-09-15 20:32:01.137 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Employee search initiated
-2025-09-15 20:32:02.430 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testSearchEmployee
-2025-09-15 20:32:02.431 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:32:02.612 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:32:02.612 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:32:02.637 [main] INFO  com.orangehrm.listeners.TestListener - Test context finished: Chrome_Tests
-2025-09-15 20:32:02.638 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: FIREFOX
-2025-09-15 20:32:02.638 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: FIREFOX
-2025-09-15 20:32:06.803 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: FIREFOX
-2025-09-15 20:32:07.256 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: FIREFOX
-2025-09-15 20:32:15.389 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:32:15.389 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testInvalidLogin
-2025-09-15 20:32:17.751 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: InvalidUser
-2025-09-15 20:32:17.821 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidUser' into element: [[FirefoxDriver: firefox on windows (4a2d027a-c6fa-4d04-acc6-efde0543fc97)] -> name: username]
-2025-09-15 20:32:17.865 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidPassword' into element: [[FirefoxDriver: firefox on windows (4a2d027a-c6fa-4d04-acc6-efde0543fc97)] -> name: password]
-2025-09-15 20:32:20.147 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:32:20.149 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testValidLogin
-2025-09-15 20:32:22.351 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
-2025-09-15 20:32:22.412 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[FirefoxDriver: firefox on windows (8ecd0e53-655b-4304-afc9-7da24a518857)] -> name: username]
-2025-09-15 20:32:22.462 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[FirefoxDriver: firefox on windows (8ecd0e53-655b-4304-afc9-7da24a518857)] -> name: password]
-2025-09-15 20:32:27.604 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[FirefoxDriver: firefox on windows (8ecd0e53-655b-4304-afc9-7da24a518857)] -> xpath: //button[@type='submit']]
-2025-09-15 20:32:27.604 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
-2025-09-15 20:32:36.102 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testValidLogin
-2025-09-15 20:32:36.102 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:32:36.734 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[FirefoxDriver: firefox on windows (4a2d027a-c6fa-4d04-acc6-efde0543fc97)] -> xpath: //button[@type='submit']]
-2025-09-15 20:32:36.734 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: InvalidUser
-2025-09-15 20:32:36.801 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testInvalidLogin
-2025-09-15 20:32:36.802 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:32:36.914 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:32:36.914 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:32:36.916 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: FIREFOX
-2025-09-15 20:32:37.668 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:32:37.670 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:32:39.848 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: FIREFOX
-2025-09-15 20:32:45.139 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
-2025-09-15 20:32:45.139 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testEmptyCredentials
-2025-09-15 20:32:45.952 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: 
-2025-09-15 20:32:45.997 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[FirefoxDriver: firefox on windows (19a6cc5d-f4b0-49e1-a804-81eda728910c)] -> name: username]
-2025-09-15 20:32:46.034 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[FirefoxDriver: firefox on windows (19a6cc5d-f4b0-49e1-a804-81eda728910c)] -> name: password]
-2025-09-15 20:32:46.175 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[FirefoxDriver: firefox on windows (19a6cc5d-f4b0-49e1-a804-81eda728910c)] -> xpath: //button[@type='submit']]
-2025-09-15 20:32:46.175 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: 
-2025-09-15 20:32:46.244 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testEmptyCredentials
-2025-09-15 20:32:46.247 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
-2025-09-15 20:32:47.018 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
-2025-09-15 20:32:47.025 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
-2025-09-15 20:32:47.032 [main] INFO  com.orangehrm.listeners.TestListener - Test context finished: Firefox_Tests
-2025-09-15 20:32:47.034 [main] INFO  com.orangehrm.base.BaseTest - Test suite execution completed
-2025-09-15 20:32:47.034 [main] INFO  com.orangehrm.listeners.TestListener - Finished test suite: OrangeHRM_Automation_Suite
+2025-09-16 10:12:23.239 [main] INFO  com.orangehrm.listeners.ExtentManager - ExtentReports initialized successfully. Report path: C:\Users\User\Desktop\SeleniumProjects\orangehrm-ci-cd-framework/reports/extent-reports/ExtentReport_2025-09-16_10-12-22.html
+2025-09-16 10:12:23.473 [main] INFO  com.orangehrm.listeners.TestListener - Starting test suite: OrangeHRM_Automation_Suite
+2025-09-16 10:12:23.504 [main] INFO  com.orangehrm.base.BaseTest - Starting test suite execution
+2025-09-16 10:12:23.569 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
+2025-09-16 10:12:23.569 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
+2025-09-16 10:12:27.781 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
+2025-09-16 10:12:27.781 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
+2025-09-16 10:12:30.767 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:12:30.835 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testAddNewEmployee
+2025-09-16 10:12:30.906 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
+2025-09-16 10:12:31.046 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:12:31.049 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testValidLogin
+2025-09-16 10:12:31.365 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> name: username]
+2025-09-16 10:12:31.508 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> name: password]
+2025-09-16 10:12:31.619 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
+2025-09-16 10:12:31.754 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[ChromeDriver: chrome on windows (b1255f233c0366a223c2f4a2e20deaf0)] -> name: username]
+2025-09-16 10:12:31.898 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[ChromeDriver: chrome on windows (b1255f233c0366a223c2f4a2e20deaf0)] -> name: password]
+2025-09-16 10:12:42.945 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type='submit']'
+2025-09-16 10:12:42.945 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
+2025-09-16 10:12:43.073 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM module
+2025-09-16 10:12:43.181 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type='submit']'
+2025-09-16 10:12:43.181 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
+2025-09-16 10:12:43.351 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testValidLogin
+2025-09-16 10:12:43.358 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:12:43.593 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:12:43.594 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:12:43.598 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
+2025-09-16 10:12:44.281 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
+2025-09-16 10:12:44.625 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> xpath: //span[text()='PIM']]
+2025-09-16 10:12:44.672 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Adding new employee: John Doe, ID: EMP1757997764672
+2025-09-16 10:12:47.525 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:12:47.527 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testInvalidLogin
+2025-09-16 10:12:48.511 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: InvalidUser
+2025-09-16 10:12:48.675 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidUser' into element: [[ChromeDriver: chrome on windows (758b1d9342dd3c445cd1379b6bf930e7)] -> name: username]
+2025-09-16 10:12:48.825 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidPassword' into element: [[ChromeDriver: chrome on windows (758b1d9342dd3c445cd1379b6bf930e7)] -> name: password]
+2025-09-16 10:12:50.254 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (758b1d9342dd3c445cd1379b6bf930e7)] -> xpath: //button[@type='submit']]
+2025-09-16 10:12:50.254 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: InvalidUser
+2025-09-16 10:12:50.333 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testInvalidLogin
+2025-09-16 10:12:50.333 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:12:50.480 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:12:50.480 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:12:50.484 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
+2025-09-16 10:12:51.165 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
+2025-09-16 10:12:54.445 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:12:54.446 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testEmptyCredentials
+2025-09-16 10:12:54.980 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: 
+2025-09-16 10:12:55.092 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[ChromeDriver: chrome on windows (d1bb754bc5fc4d55f25ff31e974d383a)] -> name: username]
+2025-09-16 10:12:55.232 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()=' Add ']'
+2025-09-16 10:12:55.241 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[ChromeDriver: chrome on windows (d1bb754bc5fc4d55f25ff31e974d383a)] -> name: password]
+2025-09-16 10:12:55.358 [TestNG-test=Chrome_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (d1bb754bc5fc4d55f25ff31e974d383a)] -> xpath: //button[@type='submit']]
+2025-09-16 10:12:55.358 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: 
+2025-09-16 10:12:55.359 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'John' into element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> name: firstName]
+2025-09-16 10:12:55.442 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testEmptyCredentials
+2025-09-16 10:12:55.444 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:12:55.554 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'Doe' into element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> name: lastName]
+2025-09-16 10:12:55.581 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:12:55.581 [TestNG-test=Chrome_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:12:55.710 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'EMP1757997764672' into element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> xpath: //label[text()='Employee Id']/following::input[1]]
+2025-09-16 10:12:55.834 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (38cdd286645427154676899b32601ff6)] -> xpath: //button[@type='submit']]
+2025-09-16 10:12:55.835 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Employee addition form submitted
+2025-09-16 10:12:57.843 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testAddNewEmployee
+2025-09-16 10:12:57.845 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:12:58.063 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:12:58.063 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:12:58.063 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: CHROME
+2025-09-16 10:12:58.878 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: CHROME
+2025-09-16 10:13:01.929 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:13:01.932 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testSearchEmployee
+2025-09-16 10:13:01.936 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
+2025-09-16 10:13:02.547 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[ChromeDriver: chrome on windows (b14e3c60342ca5c5506fc01bab43b0d6)] -> name: username]
+2025-09-16 10:13:02.693 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[ChromeDriver: chrome on windows (b14e3c60342ca5c5506fc01bab43b0d6)] -> name: password]
+2025-09-16 10:13:14.110 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type='submit']'
+2025-09-16 10:13:14.112 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
+2025-09-16 10:13:14.112 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM module
+2025-09-16 10:13:15.451 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (b14e3c60342ca5c5506fc01bab43b0d6)] -> xpath: //span[text()='PIM']]
+2025-09-16 10:13:15.451 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Searching for employee: John
+2025-09-16 10:13:15.603 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'John' into element: [[ChromeDriver: chrome on windows (b14e3c60342ca5c5506fc01bab43b0d6)] -> xpath: //input[@placeholder='Type for hints...']]
+2025-09-16 10:13:15.726 [TestNG-test=Chrome_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[ChromeDriver: chrome on windows (b14e3c60342ca5c5506fc01bab43b0d6)] -> xpath: //button[@type='submit']]
+2025-09-16 10:13:15.726 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.pages.PIMPage - Employee search initiated
+2025-09-16 10:13:15.948 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testSearchEmployee
+2025-09-16 10:13:15.948 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:13:16.130 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:13:16.130 [TestNG-test=Chrome_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:13:16.145 [main] INFO  com.orangehrm.listeners.TestListener - Test context finished: Chrome_Tests
+2025-09-16 10:13:16.145 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: FIREFOX
+2025-09-16 10:13:16.145 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: FIREFOX
+2025-09-16 10:13:20.941 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: FIREFOX
+2025-09-16 10:13:21.418 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: FIREFOX
+2025-09-16 10:13:24.792 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:13:24.798 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testInvalidLogin
+2025-09-16 10:13:25.314 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: InvalidUser
+2025-09-16 10:13:25.387 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidUser' into element: [[FirefoxDriver: firefox on windows (f2829064-45b1-454a-8fac-ae0b5605a4b9)] -> name: username]
+2025-09-16 10:13:25.454 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed 'InvalidPassword' into element: [[FirefoxDriver: firefox on windows (f2829064-45b1-454a-8fac-ae0b5605a4b9)] -> name: password]
+2025-09-16 10:13:27.313 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[FirefoxDriver: firefox on windows (f2829064-45b1-454a-8fac-ae0b5605a4b9)] -> xpath: //button[@type='submit']]
+2025-09-16 10:13:27.313 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: InvalidUser
+2025-09-16 10:13:27.396 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testInvalidLogin
+2025-09-16 10:13:27.398 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:13:27.777 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:13:27.781 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.listeners.TestListener - Starting test: testValidLogin
+2025-09-16 10:13:28.230 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:13:28.230 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:13:28.239 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test setup with browser: FIREFOX
+2025-09-16 10:13:29.152 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: Admin
+2025-09-16 10:13:29.228 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'Admin' into element: [[FirefoxDriver: firefox on windows (782dac4c-a97a-4741-ae21-f851caa5575c)] -> name: username]
+2025-09-16 10:13:29.349 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Typed 'admin123' into element: [[FirefoxDriver: firefox on windows (782dac4c-a97a-4741-ae21-f851caa5575c)] -> name: password]
+2025-09-16 10:13:31.336 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver created successfully for browser: FIREFOX
+2025-09-16 10:13:34.578 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Test setup completed successfully
+2025-09-16 10:13:34.584 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.listeners.TestListener - Starting test: testEmptyCredentials
+2025-09-16 10:13:35.158 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.pages.LoginPage - Attempting to login with username: 
+2025-09-16 10:13:35.218 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[FirefoxDriver: firefox on windows (06668381-e659-40c2-bd08-fe545bdaa6eb)] -> name: username]
+2025-09-16 10:13:35.276 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Typed '' into element: [[FirefoxDriver: firefox on windows (06668381-e659-40c2-bd08-fe545bdaa6eb)] -> name: password]
+2025-09-16 10:13:35.389 [TestNG-test=Firefox_Tests-2] DEBUG com.orangehrm.pages.BasePage - Clicked on element: [[FirefoxDriver: firefox on windows (06668381-e659-40c2-bd08-fe545bdaa6eb)] -> xpath: //button[@type='submit']]
+2025-09-16 10:13:35.389 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: 
+2025-09-16 10:13:35.464 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.listeners.TestListener - Test passed: testEmptyCredentials
+2025-09-16 10:13:35.467 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:13:36.229 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:13:36.229 [TestNG-test=Firefox_Tests-2] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:13:41.047 [TestNG-test=Firefox_Tests-1] DEBUG com.orangehrm.pages.BasePage - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type='submit']'
+2025-09-16 10:13:41.047 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.pages.LoginPage - Login attempt completed for username: Admin
+2025-09-16 10:13:41.136 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.listeners.TestListener - Test passed: testValidLogin
+2025-09-16 10:13:41.142 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Starting test cleanup
+2025-09-16 10:13:41.903 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.utils.WebDriverFactory - WebDriver closed successfully
+2025-09-16 10:13:41.912 [TestNG-test=Firefox_Tests-1] INFO  com.orangehrm.base.BaseTest - Test cleanup completed successfully
+2025-09-16 10:13:41.920 [main] INFO  com.orangehrm.listeners.TestListener - Test context finished: Firefox_Tests
+2025-09-16 10:13:41.920 [main] INFO  com.orangehrm.base.BaseTest - Test suite execution completed
+2025-09-16 10:13:41.923 [main] INFO  com.orangehrm.listeners.TestListener - Finished test suite: OrangeHRM_Automation_Suite

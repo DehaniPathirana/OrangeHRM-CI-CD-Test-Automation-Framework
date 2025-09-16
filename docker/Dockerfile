@@ -1,4 +1,3 @@
-# docker/Dockerfile
 FROM maven:3.9.5-openjdk-17-slim
 
 # Set working directory

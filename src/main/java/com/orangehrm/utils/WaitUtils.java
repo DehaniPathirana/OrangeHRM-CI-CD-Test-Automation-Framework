@@ -1,4 +1,3 @@
-// src/main/java/com/orangehrm/utils/WaitUtils.java
 package com.orangehrm.utils;
 
 import com.orangehrm.config.ConfigurationManager;

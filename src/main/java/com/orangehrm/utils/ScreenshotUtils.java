@@ -1,4 +1,3 @@
-// src/main/java/com/orangehrm/utils/ScreenshotUtils.java
 package com.orangehrm.utils;
 
 import org.openqa.selenium.OutputType;

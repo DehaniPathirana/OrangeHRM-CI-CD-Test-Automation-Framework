@@ -1,4 +1,3 @@
-// src/main/java/com/orangehrm/listeners/ExtentManager.java
 package com.orangehrm.listeners;
 
 import com.aventstack.extentreports.ExtentReports;
